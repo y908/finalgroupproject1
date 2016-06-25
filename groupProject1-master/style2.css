@@ -1,0 +1,96 @@
+/* ==== GOOGLE MAPS AND IMAGE BOX ====== */   
+
+       html, body {
+         height: 100%;
+         margin: 0;
+         padding: 0;
+       }
+       
+       #map {
+         height: 100%;
+       }
+       
+       div.scroll {
+         background-color: argb(0,0,0,0);
+         width: 900px;
+         height: 470px;
+         overflow: hidden;
+         position: absolute;
+         top:0px;
+         left:-40px;
+         z-index: 10;
+       }
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 200; /* Sit on top */
+    padding-top: 20px; /* Location of the box */
+    left: 18px;
+    top: 170px;
+
+    background: #777777;
+    border-radius: 25px;
+    border: 2px solid #cc8888;
+    padding: 0px;
+    width: 400px;
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #777777;
+    margin: auto;
+    padding: 20px;
+    height: 70px;
+    width: 80%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #cc8888;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+p {
+  color: #FFFFFF; 
+}
+
+
+
+
+
+
+@media (min-width: 320px) {
+    div.scroll{
+        width: 200px;
+    }
+}
+
+@media (min-width: 500px) {
+    div.scroll{
+        width: 300px;
+    }
+}
+
+@media (min-width: 960px) {
+    div.scroll{
+        width: 600px;
+    }
+}
+
+@media (min-width: 1100px) {
+    div.scroll{
+        width: 800px;
+    }
+}

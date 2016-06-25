@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <!-- custom scroll bars -->
+  <link href="style.css" rel="stylesheet">
+
+  <link href="jquery.mCustomScrollbar.css" rel="stylesheet"><!--jQuery CDN-->
+  <title>World Pics</title>
+
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js" type=
+  "text/javascript">
+  </script>
+
+  <!-- seperate styles -->
+  <link href="style2.css" rel="stylesheet">
+<!--comment-->
+  <!-- ==========================================-->
+<!--               code for GOOGLE                -->
+<!-- ============================================ -->
+  <meta content="initial-scale=1.0" name="viewport">
+  <meta charset="utf-8">
+
+</head>
+
+
+
+<body>
+
+
+
+
+<!-- ============================================ -->
+<!--               PICTURE BOX                    -->
+<!-- ============================================ -->
+
+            <!-- loaded pictures box-->
+  <div class="scroll">
+    <div id="demo">
+      <!-- has the custom scroll bar style -->
+      <div class="content mCustomScrollbar">
+        <h2>World Pics!</h2>
+ 
+        <div id="results"></div><!-- for the loaded photos -->
+
+        <hr>
+
+        <p>See photos from around the world! Click anywhere on the map! Images from that area will appear in a list below. If no images were uploaded from that location, they will not appear on the list.</p>
+       
+        <div class="form-group">
+          <label for="pwd">Images per click:</label>
+          <input type="text" size="4" maxlengith="4" class="form-control" id="imgAppear" style="text-align: center" value="3">
+        </div>
+
+
+
+
+<!-- ============================================ -->
+<!--                ALERT MODAL                   -->
+<!-- ============================================ -->
+  
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">×</span>
+        <p id="errorMsg"></p>
+      </div>
+
+    </div>
+
+<!--  =========     END OF MODAL     =============-->
+
+
+ 
+        
+      </div>
+    </div><!-- end of demo nest -->
+  </div>
+          <!-- end of loaded pictures box  -->
+
+
+
+
+<!-- ============================================ -->
+<!--                GOOGLE MAP API
+             in here because it works here        -->
+<!-- ============================================ -->
+
+  <!-- google map api -->
+  <div id="map"></div>
+    <script async defer src=
+    "https://maps.googleapis.com/maps/api/js?key=AIzaSyBgu8V2_XNGoVDCRSTviymDuNqU2ySfzrU&callback=initMap">
+    </script> 
+   
+
+<!-- ============================================ -->
+<!--   custom scrollbar plugin / JS LIBRARY       -->
+<!-- ============================================ -->
+  <script src="jquery.mCustomScrollbar.concat.min.js">
+  </script> 
+  <script>
+   (function($){
+     $(window).on("load",function(){
+       
+       $("#content-1").mCustomScrollbar({
+         theme:"minimal"
+       });
+       
+     });
+   })(jQuery);
+  </script> 
+
+  <!--  ========= MAIN JAVASCRIPT ========= -->
+  <script src="feelings.js" type="text/javascript">
+  </script><!--javascript-->
+
+
+</body>
+</html>
